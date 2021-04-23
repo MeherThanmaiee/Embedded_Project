@@ -1,4 +1,4 @@
-PROJ_NAME = Activity1
+PROJ_NAME = Activity_1
 
 BUILD_DIR = Build
 
@@ -55,9 +55,9 @@ $(BUILD_DIR):
 	# Create directory to store the built files
 	mkdir $(BUILD_DIR)
 
-analysis: $(SRC)
+analysis: main.c
 	#Analyse the code using Cppcheck command line utility
-	cppcheck --enable=all $^
+	cppcheck --enable=all main.c
 
 doc:
 	#Build the code code documentation using Doxygen command line utility
