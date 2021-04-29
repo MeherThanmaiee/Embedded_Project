@@ -22,6 +22,6 @@
 
 void activity3(void);
 
-void PWMoutput(uint16_t ADC_Value);
+char PWMoutput(uint16_t ADC_Value);
 
 #endif // ACTIVITY3_H_INCLUDED
