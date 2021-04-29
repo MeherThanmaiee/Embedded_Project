@@ -11,7 +11,6 @@
 |![ON](https://user-images.githubusercontent.com/62166597/115904289-3d88a080-a482-11eb-8dac-4baad5d98b64.PNG)|![OFF](https://user-images.githubusercontent.com/62166597/115904238-2e095780-a482-11eb-99fa-67ae25f4005d.PNG)|
 
 # Activity_2
-
 ## If both the above conditions are true, then input analog temperature readings are converted into digital values.
 ![ADC](https://user-images.githubusercontent.com/62166597/116454135-4a8c0200-a87d-11eb-9efc-683aa5aa190a.PNG)
 
