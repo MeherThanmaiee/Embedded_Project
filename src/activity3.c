@@ -21,30 +21,31 @@ void activity3(void){
 
 }
 
-void PWMoutput(uint16_t ADC_Value){
+char PWMoutput(uint16_t ADC_Value){
 
     if((ADC_Value>=0) && (ADC_Value<=200)){
 
-        OCR1A = 170;   //20% duty cycle
+        OCR1A = 204;   //20% duty cycle
         _delay_ms(20);
+        return 'a';
     }
     else if((ADC_Value>=210) && (ADC_Value<=500)){
 
-        OCR1A = 390;    //40% duty cycle
+        OCR1A = 409;    //40% duty cycle
         _delay_ms(20);
+       return 'b';
     }
     else if((ADC_Value>=510) && (ADC_Value<=700)){
 
-        OCR1A = 673;   //70% duty cycle
+        OCR1A = 716;   //70% duty cycle
         _delay_ms(20);
+        return 'c';
     }
     else if((ADC_Value>=710) && (ADC_Value<=1024)){
 
-        OCR1A = 973;   //95% duty cycle
+        OCR1A = 980;   //95% duty cycle
         _delay_ms(20);
-    }
-    else{
-        OCR1A = 0;  //0% duty cycle 
+        return 'd';
     }
 
 }
